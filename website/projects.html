@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    
+    .card {
+      border: 1px solid #e0e0e0;
+      border-radius: 12px; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+      transition: transform 0.3s ease-in-out; 
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+    }
+
+    .card-title {
+      font-weight: bold; 
+      
+    }
+
+    .btn-outline-primary {
+      border-radius: 20px; 
+    }
+
+    
+    .card-body {
+      padding: 1.5rem; 
+    }
+
+    
+    .card-body a.btn {
+      padding: 0.5rem 1.5rem; 
+    }
+
+    .custom-image {
+  width: 550px;  
+  height: auto;  
+}
+
+.custom-img {
+  width: 350px;  
+  height: auto;  
+}
+  </style>
+</head>
+<body class="bg-black">
+
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand ms-2" href="index.html">Jack McGrath</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto text-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/jack-mcgrath-24bb28194/">LinkedIn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/jackmcgrath2k">Github</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="about.html">About me</a>
+                  </li>
+                </ul>
+            </div>
+        </nav>
+
+    <div class="bg-light py-5">
+        <div class="container text-center">
+          <h1 class="display-4">My Projects</h1>
+          <p class="lead">Select an option from the dropdown menu below:</p>
+          <div class="dropdown mt-4">
+            <button class="btn btn-black dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+              Select
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#scrollspyHeading1">Web App</a></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading2">Websites</a></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading3">3D</a></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading4">UX/UI</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+  <!-- List of Cards -->
+  <div class="container my-5">
+    <h1 class="text-light mt-5 mb-5">Web App Development</h1>
+    <ul class="list-unstyled" id="scrollspyHeading1">
+      <li class="mb-4">
+        <div class="card">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                <h3 class="card-title">Kotify</h3>
+                <p class="fw-semibold">Android app that allows users to create playlists, populate them with songs, tag them on Google Maps, and more.</p>
+                <h3 class="fw-light">Made using:</h3>
+                <ul>
+                  <li><p >Kotlin</p></li>
+                  <li><p >Firebase</p></li>
+                  <li><p >Google Maps</p></li>
+                </ul>
+                
+              </div>
+              <img src="imgs/k1.PNG" class="custom-img" alt="Custom Size Image">
+            </div>
+            <!-- GitHub Link -->
+            <div class="mt-3">
+              <a href="https://github.com/jackmcgrath20088629/kotifyapp.git" class="btn btn-outline-primary" target="_blank">View on GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+    </li>
+      
+
+      <li class="mb-4">
+        <div class="card">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h3 class="card-title">Cashew</h3>
+                  <p class="fw-semibold">A budgeting/expenses app using features like authentication, realtime subscription, a user search system and CRUD functionality.</p>
+                    <p><span class="fst-italic">Currently only available for individual use but expanding to a group budgeting app. </span></p>
+                  <h3 class="fw-light">Made using:</h3>
+                  <ul>
+                    <li><p >React</p></li>
+                    <li><p >Vite</p></li>
+                    <li><p >supabase</p></li>
+                    <li><p >Tailwind</p></li>
+                  </ul>
+                </div>
+                <img src="imgs/cashew/c3.PNG" class="custom-image" alt="Custom Size Image">
+              </div>
+              <!-- GitHub Link -->
+              <div class="mt-3">
+                <a href="https://github.com/jackmcgrath2k/cashew" class="btn btn-outline-primary" target="_blank">View on GitHub</a>
+              </div>
+            </div>
+          </div>
+          
+      </li>
+
+      <li class="mb-4">
+        <div class="card">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <div>
+                  <h3 class="card-title">VALOSTRAT</h3>
+                  <p class="fw-semibold">A strategy app for the online game VALORANT. Users choose 1 of 10 maps, then 1 of 25 characters. Each result giving the best strategy based on the users choices.</p>
+                  <h3 class="fw-light">Made using:</h3>
+                  <ul>
+                    <li><p >React</p></li>
+                    <li><p >Tailwind</p></li>
+                  </ul>
+                </div>
+                <img src="imgs/val/v1.PNG" class="custom-image" alt="Custom Size Image">
+              </div>
+              <!-- GitHub Link -->
+              <div class="mt-3">
+                <a href="https://github.com/jackmcgrath2k/gym-app" class="btn btn-outline-primary" target="_blank">View on Github</a>
+              </div>
+            </div>
+          </div>
+          
+      </li>
+      
+    </ul>
+    <h1 class="text-light mt-5 mb-5">Website Development</h1>
+    <ul class="list-unstyled" id="scrollspyHeading2">
+      <li class="mb-4">
+        <a href="https://671a288dc14319c40c6694b8--lively-rugelach-688062.netlify.app/" class="text-decoration-none">
+        <div class="card">
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <div>
+              <h3 class="card-title">STORK</h3>
+              <p class="fw-semibold">Finance management company site.</p>
+            </div>
+            <img src="imgs/s1.PNG" class="custom-image" alt="Custom Size Image">
+          </div>
+        </div>
+      </a>
+      </li>
+
+      
+      <li class="mb-4">
+        <a href="https://671a296744ecf7c6e61ec0a9--bright-frangollo-b4f32a.netlify.app/" class="text-decoration-none">
+        <div class="card">
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <div>
+              <h3 class="card-title">TRUE PERFORMANCE</h3>
+              <p class="fw-semibold">E-Sport team management company site.</p>
+              
+            </div>
+            <img src="imgs/t1.PNG" class="custom-image" alt="Custom Size Image">
+          </div>
+        </div>
+      </a>
+      </li>
+      </a>
+    </ul>
+    <h1 class="text-light mt-5 mb-5">3D</h1>
+    <ul class="list-unstyled" id="scrollspyHeading3">
+      <li class="mb-4">
+        <a href="https://www.artstation.com/jackmcgrath" class="text-decoration-none">
+        <div class="card">
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <div>
+              <h3 class="card-title">Modelling, Lighting and Rendering portfolio</h3>
+              
+            </div>
+            <img src="imgs/32.PNG" class="custom-image" alt="Custom Size Image">
+          </div>
+        </div>
+    </a>
+      </li>
+
+      <li class="mb-4">
+        <a href="https://www.youtube.com/watch?v=7ZXmAF2zfsE" class="text-decoration-none">
+        <div class="card">
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <div>
+              <h3 class="card-title">3D Short Film</h3>
+              <p class="fw-semibold">A short film I made for my final year project.</p>
+            </div>
+            <img src="imgs/31.PNG" class="custom-image" alt="Custom Size Image">
+          </div>
+        </div>
+    </a>
+      </li> 
+      
+    </ul>
+    <h1 class="text-light mt-5 mb-5">UX/UI</h1>
+    <ul class="list-unstyled" id="scrollspyHeading4">
+      <li class="mb-4">
+        <a href="
+        https://www.behance.net/jackmcgrath1" class="text-decoration-none">
+            <div class="card">
+              <div class="card-body d-flex justify-content-between align-items-center">
+                <div>
+                  <h3 class="card-title">UX/UI Portfolio</h3>
+                </div>
+                <img src="imgs/u1.PNG" class="custom-image" alt="Custom Size Image">
+              </div>
+            </div>
+        </a>
+      </li>
+
+    </ul>
+    
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
