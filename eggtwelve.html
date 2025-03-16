@@ -49,6 +49,12 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+          .photo-container video {
+      max-width: 100%;  /* Ensures it scales down within its container */
+      max-height: 400px; /* Adjust as needed */
+      width: auto;  /* Keeps aspect ratio */
+      height: auto; /* Keeps aspect ratio */
+  }
     </style>
 </head>
 <body class="bg-light">
@@ -77,31 +83,31 @@
             <div class="col photo-item"><img src="Social/e12-dublin.png" alt="Photo 3"></div>
         </div>
     </div>
-        <div class="container text-center py-5">
-        <h4 class="text-dark mb-4">Spotify Canvas'</h4>
-        <div class="row row-cols-1 row-cols-md-3 g-4 photo-container">
-            <div class="col photo-item">
-            <video autoplay loop muted>
-            <source src="anchorcanvas-5sec-sharp.mp4" type="video/mp4">
+       <div class="container text-center py-5">
+    <h4 class="text-dark mb-4">Spotify Canvas'</h4>
+    <div class="row row-cols-1 row-cols-md-3 g-4 photo-container">
+        <div class="col photo-item">
+            <video autoplay loop muted class="rounded">
+                <source src="anchorcanvas-5sec-sharp.mp4" type="video/mp4">
             </video>
-            </div>
-            <div class="col photo-item">
-            <video autoplay loop muted>
-            <source src="mossbawncanvas-5sec-unsharpened.mp4" type="video/mp4">
+        </div>
+        <div class="col photo-item">
+            <video autoplay loop muted class="rounded">
+                <source src="mossbawncanvas-5sec-unsharpened.mp4" type="video/mp4">
             </video>
-            </div>
-          <div class="col photo-item">
-            <video autoplay loop muted>
-            <source src="mossbawncanvas-5sec-sharp.mp4" type="video/mp4">
+        </div>
+        <div class="col photo-item">
+            <video autoplay loop muted class="rounded">
+                <source src="mossbawncanvas-5sec-sharp.mp4" type="video/mp4">
             </video>
-            </div>
-          <div class="col photo-item">
-            <video autoplay loop muted>
-            <source src="thewirecanvas-5sec.mp4" type="video/mp4">
+        </div>
+        <div class="col photo-item">
+            <video autoplay loop muted class="rounded">
+                <source src="thewirecanvas-5sec.mp4" type="video/mp4">
             </video>
-            </div>
         </div>
     </div>
+</div>
       <div class="container text-center py-5">
         <h4 class="text-dark mb-4">Cover art</h4>
         <div class="row row-cols-1 row-cols-md-3 g-4 photo-container">
