@@ -56,14 +56,10 @@
       height: auto; /* Keeps aspect ratio */
   }
 
-body {
+.back-button-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background-color: #f9f9f9;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin-top: 40px; /* adjust as needed */
 }
 
 .back-button {
@@ -73,6 +69,7 @@ body {
   border-radius: 12px;
   padding: 10px 24px;
   font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: background-color 0.2s ease;
@@ -92,7 +89,9 @@ body {
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <button class="back-button" onclick="history.back()">‹ Back</button>
+<div class="back-button-container">
+  <button class="back-button" onclick="history.back()">‹ Back</button>
+</div>
 
 
     </nav>
